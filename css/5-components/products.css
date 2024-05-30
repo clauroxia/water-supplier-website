@@ -29,6 +29,7 @@
 }
 
 .products__group figcaption {
+  text-align: center;
   font-weight: 600;
   color: var(--background);
   text-shadow: 0.1em 0.1em 0.1em rgb(114, 112, 112);

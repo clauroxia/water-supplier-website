@@ -96,9 +96,9 @@
   gap: var(--spacing-3);
 }
 
-.footer__links h1 {
-  font-size: var(--font-lg);
-  font-weight: 500;
+.footer__links h2 {
+  font-size: var(--font-base);
+  font-weight: 600;
   text-align: center;
   color: var(--white);
 }
@@ -111,7 +111,7 @@
 }
 
 .footer__links a {
-  font-size: var(--font-sm);
+  font-size: var(--font-base);
   font-weight: 500;
   color: var(--white);
   line-height: var(--spacing-6);
@@ -180,8 +180,8 @@
     align-items: flex-start;
   }
 
-  .footer__links h1 {
-    font-size: var(--font-2xl);
+  .footer__links h2 {
+    font-size: var(--font-xl);
   }
 
   .footer__links ul {

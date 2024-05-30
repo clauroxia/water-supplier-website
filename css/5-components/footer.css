@@ -37,7 +37,7 @@
 }
 
 .footer__social-media img {
-  width: 24px;
+  width: 28px;
 }
 
 .footer_social-media a,
@@ -105,7 +105,7 @@
 .footer__links ul {
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
   gap: var(--spacing-1);
 }
 
@@ -117,13 +117,14 @@
 }
 
 .footer--copyright {
+  padding-block: var(--spacing-4);
+}
+
+.footer--copyright p {
   font-size: var(--font-xs);
   font-weight: 600;
   color: var(--background-active);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-block: var(--spacing-4);
+  text-align: center;
   text-shadow: 0.1em 0.1em 0.2em black;
 }
 

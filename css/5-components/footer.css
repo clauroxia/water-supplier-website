@@ -99,6 +99,7 @@
 .footer__links h1 {
   font-size: var(--font-lg);
   font-weight: 500;
+  text-align: center;
   color: var(--white);
 }
 

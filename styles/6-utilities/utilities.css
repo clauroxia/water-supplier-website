@@ -1,0 +1,65 @@
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.gap-8 {
+  gap: var(--spacing-2);
+}
+
+.align-center {
+  align-items: center;
+}
+
+@keyframes move-to-right {
+  0% {
+    transform: translateX(0px);
+  }
+
+  100% {
+    transform: translateX(16px);
+  }
+}
+
+.right-arrow {
+  animation: move-to-right 1000ms ease-in-out infinite;
+  animation-direction: alternate;
+  width: 20px;
+}
+
+.fixed-btn {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  bottom: 48px;
+  right: 16px;
+  z-index: 2;
+}
+
+.grow {
+  transition: transform 800ms;
+}
+
+.grow:hover {
+  transform: scale(105%);
+}
+
+.mobile-icon {
+  width: 16px;
+}
+
+.envelope-icon {
+  width: 20px;
+}
+
+.hide {
+  display: none;
+}
+
+.menu-icon {
+  padding: 0;
+}
+

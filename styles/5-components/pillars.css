@@ -1,0 +1,108 @@
+.pillars {
+  background-color: var(--sky-400);
+}
+
+.pillars__container {
+  padding-block: var(--spacing-12);
+}
+
+.pillars__title {
+  color: var(--background);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: var(--spacing-12);
+  font-size: var(--font-2xl);
+  font-weight: 600;
+  text-shadow: -1px 0 var(--sky-950), 0 1px var(--sky-950), 2px 0 var(--sky-950), 0 -2px var(--sky-950);
+}
+
+.pillars__list {
+  padding-inline: var(--spacing-4);
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: var(--spacing-12);
+  place-items: center;
+}
+
+.pillars__list figcaption {
+  text-align: center;
+  font-weight: 600;
+  color: var(--background);
+  margin-bottom: var(--spacing-4);
+  text-shadow: 0.1em 0.1em 0.1em rgb(114, 112, 112);
+}
+
+.pillars__item {
+  max-width: 350px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.pillars__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--rounded-2xl);
+  cursor: pointer;
+  z-index: 1;
+  transition: opacity 800ms 300ms ease-out;
+}
+
+.pillars__image:hover {
+  opacity: 0.15;
+}
+
+.pillars__description {
+  position: absolute;
+  top: 16px;
+  bottom: 16px;
+  left: 32px;
+  right: 32px;
+  color: var(--sky-950);
+  font-weight: 600;
+  font-size: var(--font-sm);
+  text-align: justify;
+}
+
+@media (min-width: 768px) {
+  .pillars__title {
+    font-size: var(--font-3xl);
+  }
+
+  .pillars__list figcaption {
+    font-size: var(--font-lg);
+  }
+
+  .pillars__item {
+    max-width: 400px;
+    height: 250px;
+  }
+  
+}
+
+@media (min-width: 1280px) {
+  .pillars__container {
+    padding-block: var(--spacing-14);
+  }
+
+  .pillars__list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: var(--spacing-20);
+  }
+
+  .pillars__list figcaption {
+    font-size: var(--font-xl);
+  }
+
+  .pillars__title {
+    font-size: var(--font-4xl);
+    margin-bottom: var(--spacing-20);
+  }
+
+  .pillars__description {
+    font-size: var(--font-base);
+  }
+}

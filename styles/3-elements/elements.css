@@ -1,0 +1,30 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--text);
+  color: var(--foreground);
+  background-color: var(--background);
+  font-size: var(--font-base);
+  line-height: var(--leading-6);
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading);
+}
+
+code {
+  font-family: var(--monospace);
+}
+
+hr {
+  margin-block: var(--spacing-12);
+  border: 1px solid var(--border);
+}

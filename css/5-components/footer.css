@@ -89,7 +89,6 @@
 }
 
 .footer__links {
-  min-width: 220px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -101,7 +100,6 @@
   font-size: var(--font-lg);
   font-weight: 500;
   color: var(--white);
-  /* align-items: center; */
 }
 
 .footer__links ul {
@@ -158,9 +156,6 @@
     padding-block: var(--spacing-10);
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 2fr 1fr;
-    /* display: flex;
-    align-items: center;
-    justify-content: space-between; */
     gap: 120px;
   }
 
@@ -185,7 +180,6 @@
 
   .footer__links h1 {
     font-size: var(--font-2xl);
-    
   }
 
   .footer__links ul {

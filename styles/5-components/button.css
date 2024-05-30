@@ -1,0 +1,121 @@
+/* Button */
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  border-radius: var(--rounded-lg);
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+  cursor: pointer;
+
+  font-family: var(--text);
+  font-size: var(--font-sm);
+  font-weight: 500;
+
+  height: var(--spacing-10);
+  gap: var(--spacing-2);
+  line-height: var(--leading-5);
+  padding: var(--spacing-2) var(--spacing-4);
+  transition: background-color 300ms 0.2s ease-in-out, transform 0.2s ease;
+}
+
+@media (min-width: 768px) {
+  .button {
+    font-size: var(--font-base);
+  }
+}
+
+@media (min-width: 1280px) {
+  .button {
+    font-size: var(--font-lg);
+  }
+}
+
+.button:hover {
+  background: var(--primary-hover);
+}
+
+.button:active {
+  background: var(--primary-active);
+  transform: translateY(2px);
+}
+
+.button:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.button:focus {
+  outline-width: 2px;
+  outline-color: var(--ring);
+  outline-offset: 3px;
+}
+
+.button--sm {
+  height: var(--spacing-9);
+  padding: var(--spacing-2) var(--spacing-3);
+}
+
+.button--lg {
+  height: var(--spacing-11);
+  padding: var(--spacing-2) var(--spacing-8);
+}
+
+.button--icon {
+  height: var(--spacing-10);
+  padding: var(--spacing-3) var(--spacing-3);
+}
+
+.button--secondary {
+  background: var(--neutral-200);
+  color: var(--secondary-foreground);
+}
+
+.button--secondary:hover {
+  background: var(--secondary-hover);
+}
+
+.button--secondary:active {
+  background: var(--secondary-active);
+}
+
+.button--outline {
+  background: var(--background);
+  border: 2px solid var(--primary);
+  color: var(--secondary-foreground);
+}
+
+.button--outline:hover {
+  background-color: var(--background-hover);
+}
+
+.button--outline:active {
+  background-color: var(--background-active);
+}
+
+.button--floating {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: var(--rounded-full);
+  background-color: var(--green-600)
+}
+
+.button--floating:hover {
+  background-color: var(--green-500);
+}
+
+.button a:link,
+.button a:visited,
+.button a:active {
+  text-decoration: none;
+  color: var(--primary-foreground);
+}
+
+@media (min-width: 1280px) {
+  .button--floating {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+}

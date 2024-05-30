@@ -4,12 +4,15 @@ class Menu {
     this.closeMenu = closeMenu;
     this.menuMobile = menuMobile;
     this.menuBtn = menuBtn;
-    this.sectionGroup = document.getElementById("section-group");
+    this.screenSpace = document.querySelectorAll(".js-body-footer");
   }
 
   clickEvent() {
     this.menuBtn.addEventListener("click", this.handleMenuButton.bind(this));
-    this.sectionGroup.addEventListener("click", this.showMenuButton.bind(this));
+
+    for(let click of this.screenSpace) {
+      click.addEventListener("click", this.showMenuButton.bind(this));
+    }
   }
 
   handleMenuButton() {

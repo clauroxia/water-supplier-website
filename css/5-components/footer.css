@@ -183,6 +183,7 @@
 
   .footer__links h2 {
     font-size: var(--font-xl);
+    min-width: unset;
   }
 
   .footer__links ul {
